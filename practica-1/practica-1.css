@@ -1,0 +1,23 @@
+h2 {
+    color: rgb(173, 111, 111);
+}
+
+ul {
+    color: chocolate;
+    font-size: small;
+}
+
+.social {
+    text-decoration: none;
+    color: rgb(168, 208, 37);
+    font-size: 20px;
+}
+
+#parrafo {
+    color: aquamarine;
+}
+
+#foto {
+    display: block;
+    position: center;
+}
