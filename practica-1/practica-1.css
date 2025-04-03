@@ -18,6 +18,8 @@ ul {
 }
 
 #foto {
-    display: block;
+    border: solid 5px;
+    padding: 50px;
+    display: flex;
     margin: auto;
 }

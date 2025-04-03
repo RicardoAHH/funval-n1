@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    width: 1440px;
+    background-color: hsl(30, 54%, 90%);
+}
+
+main {
+    margin: solid;
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    margin: 60px auto;
+    border-radius: 5%;
+
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: none;
+    padding: none;
+    border-radius: 5%;
+}
+
+h1 {
+    text-align: left;
+    border: 20px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    color: hsl(30, 10%, 34%);
+}
+
+ul {
+    padding-left: 10px;
+}
+
+div {
+    padding: 10%;
+    margin: auto;
+    border-radius: 5%;
+}
+
+#time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px 30px;
+}
+
+li {
+    margin: 6px;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    color: hsl(30, 10%, 34%);
+    padding-left: 20px;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 300;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+}
+
+ol {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    color: hsl(30, 10%, 34%);
+    padding-left: 10px;
+
+}
+
+ol li {
+    list-style-type: none;
+    counter-increment: lista;
+    position: relative;
+}
+
+ol li::before {
+    color: hsl(14, 45%, 36%);
+    content: counter(lista) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    font-weight: 800;
+
+}
+
+td {
+
+    width: 70px;
+    padding: 5px 170px 5px 28px;
+}
+
+.t1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    color: hsl(30, 10%, 34%);
+}
+
+.t2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+
+}
+
+hr {
+    background-color: hsl(30, 10%, 34%);
+}
