@@ -131,3 +131,21 @@ figure {
 .figure2>figure {
     height: 50%;
 }
+
+.footer {
+    border: solid 5px rgb(0, 64, 255);
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.footer>div {
+    border: solid 5px green;
+    height: 80%;
+    width: 20%;
+
+
+}
