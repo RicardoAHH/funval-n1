@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 body {
@@ -67,7 +67,7 @@ main {
 
 main>section {
     border: solid 5px blue;
-    height: 450px;
+    height: 550px;
     display: flex;
 
 }
@@ -86,17 +86,48 @@ main>section {
 
 figure {
     border: solid 5px red;
-    width: 150px;
-    height: 30%;
+    width: 30%;
+    height: 40%;
 }
 
 .fig2 {
     border: solid 5px red;
-    width: 180px;
-    height: 40%;
+    width: 40%;
+    height: 50%;
 }
 
-.section2 {
+.section2>.figure1 {
+    border: solid 5px green;
+    min-height: 450px;
+    width: 50%;
     display: flex;
-    padding-left: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 30px;
+}
+
+#fig3 {
+    width: 50%;
+}
+
+#fig4 {
+    width: 90%;
+}
+
+.section2>.figure2 {
+    border: solid 5px green;
+    min-height: 450px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.figure2>figure {
+    height: 50%;
 }
