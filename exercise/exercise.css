@@ -39,7 +39,6 @@ body {
     display: flex;
     justify-content: space-between;
     border: solid 5px green;
-    text-align: center;
 }
 
 .nav {
@@ -63,32 +62,33 @@ body {
 
 main {
     border: solid 5px orange;
-    height: auto;
+    min-height: 900px;
+
 }
 
 main>section {
     border: solid 5px blue;
-    height: 550px;
+    min-height: 550px;
     display: flex;
 
 }
 
 .section1>div {
     border: solid 5px green;
-    min-height: 450px;
+    min-height: 550px;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20%;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 figure {
     border: solid 5px red;
-    width: 30%;
-    height: 40%;
+    width: 190px;
+    height: 190px;
 }
 
 .fig2 {
