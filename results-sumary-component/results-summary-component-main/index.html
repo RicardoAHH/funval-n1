@@ -31,58 +31,62 @@
 
 <body class="font-[Hanken_Grotesk]">
 
-  <section
-    class=" flex flex-col justify-center items-center  pb-3 bg-linear-to-b from-[#7857ff] to-[#2e2be9] w-screen h-[290px] rounded-b-3xl font-family-outfit">
+  <section class=" flex flex-col justify-center items-center  pb-3 bg-linear-to-b from-[#7857ff] to-[#2e2be9] 
+    w-screen h-[290px] rounded-b-[35px] font-family-outfit">
     <p class="text-[#c8c7ff] pb-3 ">Your Result</p>
     <div
       class="flex flex-col justify-center items-center bg-linear-to-b from-[#4e21ca] to-[#4636f100] w-25 h-25 rounded-full">
       <p class="pt-1 text-[37px] font-bold te text-[#ffffff]">76</p>
       <p class="opacity-40 text-[#c8c7ff] text-[12px]">of 100</p>
     </div>
-    <p class="text-[rgb(255,255,255)] pt-5">Great</p>
+    <p class="text-[rgb(255,255,255)] pt-5 font-semibold">Great</p>
     <p class=" w-[65%] text-center text-[#c8c7ff] text-[14px]">You scored higher than 65% of the people who have taken
       these tests.
     </p>
   </section>
-  <section class="px-8 py-7 w-[100%] border-3 h-[400px] flex flex-col gap-5">
-    <div class="border-3">
+  <section class="px-8 py-7 w-[100%] h-[400px] flex flex-col gap-5">
+    <div class="">
       <h2 class="text-lg font-semibold">Summary</h2>
     </div>
-    <div class="border-5 flex flex-col gap-5">
-      <div class="flex justify-between border-3 h-10 items-center">
-        <div class="flex gap-3"><img src="./assets/images/icon-reaction.svg" alt="reaction">
-          <span> Reaction</span>
+    <div class="flex flex-col gap-5">
+      <div class="flex justify-between h-10 items-center rounded-xl bg-[#ff575715]">
+        <div class="pl-2 flex gap-3"><img src="./assets/images/icon-reaction.svg" alt="reaction">
+          <span class="text-[#ff5757]"> <strong>Reaction</strong></span>
         </div>
-        <div>
-          <p><strong>80</strong>/ 100</p>
-        </div>
-      </div>
-      <div class="flex justify-between border-3 h-10 items-center">
-        <div class="flex gap-3"><img src="./assets/images/icon-memory.svg" alt="memory">
-          <span> Memory</span>
-        </div>
-        <div>
-          <p><strong>92</strong>/ 100</p>
+        <div class="flex">
+          <p class="pr-2"><strong>80</strong></p>
+          <p class="font-semibold opacity-40 pr-2">/ 100</p>
         </div>
       </div>
-      <div class="flex justify-between border-3 h-10 items-center">
-        <div class="flex gap-3"><img src="./assets/images/icon-verbal.svg" alt="Verbal">
-          <span> Reaction</span>
+      <div class="flex justify-between h-10 items-center rounded-xl bg-[#ffb01f15]">
+        <div class="pl-2 flex gap-3"><img src="./assets/images/icon-memory.svg" alt="memory">
+          <span class="text-[#ffb01f]"><strong> Memory</strong></span>
         </div>
-        <div>
-          <p><strong>61</strong>/ 100</p>
-        </div>
-      </div>
-      <div class="flex justify-between border-3 h-10 items-center">
-        <div class="flex gap-3"><img src="./assets/images/icon-visual.svg" alt="visual">
-          <span> Visual</span>
-        </div>
-        <div>
-          <p><strong>73</strong>/ 100</p>
+        <div class="flex">
+          <p class="pr-2"><strong>92</strong></p>
+          <p class="font-semibold opacity-40 pr-2">/ 100</p>
         </div>
       </div>
-      <div class="flex flex-col border-3 h-10">
-        <button>
+      <div class="flex justify-between h-10 items-center rounded-xl bg-[#00bd9115]">
+        <div class="pl-2 flex gap-3"><img src="./assets/images/icon-verbal.svg" alt="Verbal">
+          <span class="text-[#00bd91]"> <strong>Verbal</strong></span>
+        </div>
+        <div class="flex">
+          <p class="pr-2"><strong>61</strong></p>
+          <p class="font-semibold opacity-40 pr-2">/ 100</p>
+        </div>
+      </div>
+      <div class="flex justify-between h-10 items-center rounded-xl bg-[#1125d415]">
+        <div class="pl-2 flex gap-3"><img src="./assets/images/icon-visual.svg" alt="visual">
+          <span class="text-[#1125d4]"><strong> Visual</strong></span>
+        </div>
+        <div class="flex">
+          <p class="pr-2"><strong>73</strong></p>
+          <p class="font-semibold opacity-40 pr-2">/ 100</p>
+        </div>
+      </div>
+      <div class="flex flex-col h-10 items-center justify-center rounded-3xl bg-[#303b5a]">
+        <button class="text-white">
           Continue
         </button>
       </div>
