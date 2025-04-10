@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-mode</title>
+    <link rel="stylesheet" href="./dark.css">
+    <script src="./dark.js" defer></script>
+</head>
+
+<body class="h-screen flex justify-center items-center bg-blue-200 dark:bg-sky-950">
+    <main class="bg-white h-1/2 w-1/2 rounded-3xl flex flex-col p-8 items-center justify-center gap-1.5">
+        <img src="https://purina.com.mx/sites/default/files/2022-11/purina-brand-cuanto-vive-un-gato-nota_03.jpg"
+            alt="gato" width="300">
+        <h1 class="font-bold">The cat</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div id="dark" class="border-1 px-2 py-2 mt-5 flex items-center rounded-2xl ">
+            <button class="hidden dark:block">
+                <img src="../Resources/dark/sun-regular-24.png" alt="">
+            </button>
+            <button class="block dark:hidden">
+                <img src="../Resources/dark/moon-regular-24.png" alt="">
+            </button>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
