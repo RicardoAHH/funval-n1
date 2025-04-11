@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -12,21 +12,44 @@
     </style>
 </head>
 
-<body class="w-[375px] h-[812px] font-[montserrat] bg-white dark:bg-[#050519]">
-    <header class="w-[375px] h-[68px]  flex items-center justify-between">
-        <img class="mr-auto ml-[28px]" src="../Resources/UI/Union.png" alt="union">
-        <div id="dark" class="">
-            <button class="block dark:hidden">
-                <img src="../Resources/UI/🌝.png" alt="luna">
-            </button>
-            <button class="hidden dark:block">
-                <img src="../Resources/UI/🌝 (1).png" alt="lunaoscuro">
-            </button>
+<body class="w-[375px] h-[812px] font-[montserrat] bg-white dark:bg-[#050519] min-[1440px]:h-[900px] ">
+    <header class="w-[375px] h-[68px]  flex items-center justify-between min-[1440px]:h-[88px] min-[1440px]:w-screen">
+        <img class="mr-auto ml-[28px] min-[1440px]:hidden" src="../Resources/UI/Union.png" alt="union">
+        <div class="ml-20 hidden min-[1440px]:block min-[1440px]:flex min-[1440px]:items-center ">
+            <img class="mr-auto ml-[28px] " src="../Resources/UI/Frame 21.png" alt="frame 21">
+            <h2 class="ml-3 font-semibold text-[22px]">BISCUIT</h2>
+        </div>
+        <div class="hidden  w-[368px] h-[40px]  min-[1440px]:block mr-40">
+            <nav class="h-[100%] flex items-center justify-between">
+                <button class="text-[16px] font-medium">About</button>
+                <button class="text-[16px] font-medium">Work</button>
+                <button class="text-[16px] font-medium">Contact</button>
+                <div class="dark" class="">
+                    <button class="block dark:hidden">
+                        <img class="min-[1440px]:w-[40px] min-[1440px]:h-[40px]" src="../Resources/UI/🌝 (2).png"
+                            alt="solGrande">
+                    </button>
+                    <button class="hidden dark:block">
+                        <img src="../Resources/UI/🌝 (1).png" alt="lunaoscuro">
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div class="min-[1440px]:hidden">
+            <div class="dark">
+                <button class="block dark:hidden">
+                    <img class="min-[1440px]:w-[40px] min-[1440px]:h-[40px]" src="../Resources/UI/🌝.png" alt="luna">
+                </button>
+                <button class="hidden dark:block">
+                    <img src="../Resources/UI/🌝 (1).png" alt="lunaoscuro">
+                </button>
+            </div>
         </div>
         <div
-            class="w-[78px] h-[28px] bg-[#F2F2F7] dark:bg-[#282C34] mr-[28px] ml-[28px] rounded-xl flex items-center justify-center">
+            class="w-[78px] h-[28px] bg-[#F2F2F7] dark:bg-[#282C34] mr-[28px] ml-[28px] rounded-xl flex items-center justify-center min-[1440px]:hidden">
             <p class="w-[46px] h-[21px] text-black dark:text-white">MENU</p>
         </div>
+
 
     </header>
     <main class="w-[375px] h-[676px] flex flex-col items-center justify-center">

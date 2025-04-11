@@ -1,4 +1,4 @@
-let buttonDark = document.querySelector("#dark");
+let buttonDark = document.querySelector(".dark");
 
 buttonDark.addEventListener("click", switchDarkMode);
 
