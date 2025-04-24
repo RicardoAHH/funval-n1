@@ -16,13 +16,13 @@ function depositar() {
 
 function retirar() {
     while (true) {
-        retiro = parseFloat(prompt("Ingrese la cantidad que desea retirar: \nEl limite diario de retiro es de 15000 en cajero"))
-        retiroAcumulado = retiroAcumulado + retiro
-        if (retiroAcumulado <= 15000) {
+        retiro = parseFloat(prompt("Ingrese la cantidad que desea retirar: \nEl limite diario de retiro es de 35000 en cajero"))
+        if (retiroAcumulado <= 35000) {
             if (retiro > saldo) {
                 alert("Saldo insuficiente, no es posible retirar mas que el saldo actual")
-            } else if (retiro <= saldo && retiro > 0) {
+            } else if (retiro <= saldo && retiro > 0 && retiro <= 35000) {
                 saldo = saldo - retiro
+                retiroAcumulado = retiroAcumulado + retiro
                 alert("Retiro exitoso, su nuevo saldo es " + saldo)
                 break;
             } else {
@@ -32,8 +32,10 @@ function retirar() {
             alert("Ha superado la cantidad a retirar por día")
             break;
         }
+
     }
 }
+
 while (true) {
     let oper = prompt(`Indica la operación que desea realizar:
     1 - Consultar su saldo
