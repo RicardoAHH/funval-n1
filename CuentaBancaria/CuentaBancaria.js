@@ -17,10 +17,10 @@ function depositar() {
 function retirar() {
     while (true) {
         retiro = parseFloat(prompt("Ingrese la cantidad que desea retirar: \nEl limite diario de retiro es de 35000 en cajero"))
-        if (retiroAcumulado <= 35000) {
+        if (retiroAcumulado < 35000) {
             if (retiro > saldo) {
                 alert("Saldo insuficiente, no es posible retirar mas que el saldo actual")
-            } else if (retiro <= saldo && retiro > 0 && retiro <= 35000) {
+            } else if (retiro <= saldo && retiro >= 0 && retiro <= 35000) {
                 saldo = saldo - retiro
                 retiroAcumulado = retiroAcumulado + retiro
                 alert("Retiro exitoso, su nuevo saldo es " + saldo)
