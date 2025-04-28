@@ -72,3 +72,4 @@ const productos2 = [
 ];
 productos2.reverse();
 console.log(productos2);
+

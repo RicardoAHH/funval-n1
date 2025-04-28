@@ -246,3 +246,70 @@ for (let index = 0; index < estudiantes.length; index++) {
 // delete objeto.nacionalidad;
 
 // console.log(objeto);
+
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+
+// }
+
+// let manzana = {
+//     peso: 10,
+//     precio: 20,
+// };
+
+// for (let key in manzana) {
+//     console.log(manzana[key])
+// }
+
+// let palabras = ["hola", "mundo"]
+
+// mayusculas = palabras.map((x) => x.toUpperCase())
+// console.log(mayusculas)
+
+// let objetos = [{
+//     nombre: "Daniel",
+//     edad: 24,
+// }, {
+//     nombre: "Miguel",
+//     edad: 22,
+// }, {
+//     nombre: "Gustavo",
+//     edad: 23,
+// }, {
+//     nombre: "Domingo",
+//     edad: 20,
+// }]
+
+// console.log(objetos[0].edad)
+
+// let edades = objetos.map((x) => "edad: " + x.edad)
+// console.log(edades);
+
+let obj2 = [{
+    nombre: "Daniel",
+    puntos: 74,
+}, {
+    nombre: "Miguel",
+    puntos: 22,
+}, {
+    nombre: "Gustavo",
+    puntos: 23,
+}, {
+    nombre: "Domingo",
+    puntos: 80,
+}]
+
+console.log(obj2[0].puntos)
+
+let aumento = obj2.map((x) => {
+    let pts = x.puntos;
+    if (x.puntos >= 50) { x.puntos = x.puntos + 10 }
+
+    return {
+        nombre: x.nombre,
+        puntos: pts,
+    };
+}
+);
+console.log(aumento)
+console.log(obj2);
