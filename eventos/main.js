@@ -119,34 +119,36 @@
 
 
 ///fiona en una etiqueta h2 al presionar el boton dia y noche
-///fiona se transforma en ogro y tambien los estilos que la contengan 
+///fiona se transforma en ogro y tambien los estilos que la contengan
 
-let boton = document.querySelector("#Dia")
-let fiona = document.querySelector("#Fiona")
-let DIA = true;
+// let boton = document.querySelector("#Dia")
+// let fiona = document.querySelector("#Fiona")
+// let DIA = true;
 
-boton.addEventListener("click", function (evento) {
-    DIA = !DIA
-    if (DIA == true) {
-        boton.textContent = "Noche"
-        fiona.textContent = "Fiona es un ogro"
-        fiona.style.backgroundColor = "green"
-    } else {
-        boton.textContent = "Dia"
-        fiona.textContent = "Fiona es una princesa"
-        fiona.style.backgroundColor = "yellow"
-    }
-})
+// boton.addEventListener("click", function (evento) {
+//     DIA = !DIA
+//     if (DIA == true) {
+//         boton.textContent = "Noche"
+//         fiona.textContent = "Fiona es un ogro"
+//         fiona.style.backgroundColor = "green"
+//     } else {
+//         boton.textContent = "Dia"
+//         fiona.textContent = "Fiona es una princesa"
+//         fiona.style.backgroundColor = "yellow"
+//     }
+// })
 
-let megainput = document.querySelector("#inputCadena");
-let cuenta = document.querySelector("#supercontador");
+// let megainput = document.querySelector("#inputCadena");
+// let cuenta = document.querySelector("#supercontador");
 
-let contador = 0;
-megainput.addEventListener("keyup", function (evento) {
-    console.log(evento.target.value);
-    contador = evento.target.value.length;
-    cuenta.textContent = `CONTADOR : ${contador}`;
-});
+// let contador = 0;
+// megainput.addEventListener("keyup", function (evento) {
+//     console.log(evento.target.value);
+//     contador = evento.target.value.length;
+//     cuenta.textContent = `CONTADOR : ${contador}`;
+// });
+
+
 
 /*crear un input de flitrado 
 vamos a tener un listado ul li
@@ -154,5 +156,24 @@ al ir metiendo un nombre deben desaparecer del listado las
 peliculas que no comiencen con la letra 
 keyup en tiempo real y comparar con los nombres 
 dysplay none si no esta */
+
+
+let pelis = document.querySelectorAll(".pelis")
+let entrada = document.querySelector("#peliculas")
+// console.log(pelis)
+// console.log(pelis[0].innerHTML)
+
+entrada.addEventListener("keyup", function (evento) {
+    entrada = evento.target.value
+    for (let i = 0; i < pelis.length; i++) {
+        if (pelis[i].innerHTML.startsWith(entrada)) {
+            pelis[i].hidden = false
+        } else {
+            pelis[i].hidden = true
+        }
+
+    }
+})
+
 
 
