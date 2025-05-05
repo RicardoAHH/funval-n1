@@ -117,11 +117,105 @@
 // console.log(nuevo)
 
 
-let numeros = [[4, 6, 7], [3, 2], [3, 4, 6, 2]]
+// let numeros = [[4, 6, 7], [3, 2], [3, 4, 6, 2]]
 
-numeros.forEach((item) => {
-    console.log(item)
-    item.forEach((x) => {
-        console.log(x);
-    });
-});
+// numeros.forEach((item) => {
+//     console.log(item)
+//     item.forEach((x) => {
+//         console.log(x);
+//     });
+// });
+
+//desestructuracion de array
+
+// const edades = [12, 34, 24, 64, 24, 2, 54,]
+
+// let [primero, segundo, tercero, cuarto, quinto, sexto, septimo, octavo = 0, noveno = 0] = edades;
+
+// console.log(edades);
+// console.log(primero);
+// console.log(segundo);
+// console.log(noveno);
+
+// //desestructuracion de objetos 
+
+// let persona = {
+//     nombre: "Tomas",
+//     edad: 20,
+//     pais: "Argentina",
+// };
+
+// let { nombre: name, edad, pais, llave = "valor" } = persona; //caminar el nombre nombre:name   asiganr una llave y valor que aun no esta 
+
+// console.log(name);
+// console.log(edad);
+// console.log(pais);
+// console.log(llave);
+
+
+// //propagacion de arrays
+
+// let numeros = [1, 2, 3, 4, 5, 6, 7];
+// let numeritos = [11, 22, 33, 44, 55, 66, 77];
+// let resultado = [...numeros, 322, 77, ...numeritos]
+// console.log(resultado)
+
+
+// //propagacion de objetos 
+
+// let estudiante = {
+//     nombre: "kevin",
+//     edad: 22,
+// }
+
+// let superestudiante = {
+//     nombre: "ricardo",
+//     pais: "mexico",
+// };
+
+// let fusion = { ...estudiante, ...superestudiante, llave: [2, 3, 4] };
+// // si la llave es reptida se toma la llave del ultimo objeto 
+// console.log(fusion)
+
+
+/// No alterar el array principal
+/// No usar ciclo for SI foreach map filter
+/// No modificar los objetos del array usuarios 
+/// todo debe star dentro una una funcion que reciba el array usuarios
+
+/*Filtrar a los usuarios tipo admin 
+a cada objeto agregarle una llave llamada correo nombre@gmail.com
+mostrar del primer elmento las llaves correo y nombre usando desestructuracion de arrays y objetos
+*/
+
+const usuarios = [
+    { id: 1, nombre: "Ana", roles: ["admin"] },
+    { id: 2, nombre: "Gino", roles: ["user"] },
+    { id: 3, nombre: "Cristian", roles: ["admin", "user"] },
+];
+console.log(usuarios)
+
+let nuevoarray = usuarios.filter(usuarios => usuarios.roles.includes("admin"));
+// let nuevoarray = usuarios.map((x) => {
+
+//     if (x.roles.includes("admin")) {
+//         return x 
+//     }
+
+// });
+
+console.log(nuevoarray)
+
+let [primero, segundo] = nuevoarray
+
+console.log(primero)
+
+// let filtrado = usuarios.roles.filter((x) => x === "admin")
+
+
+
+// function filterItems(arr, query) {
+//     return arr.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
+// }
+
+// console.log(filterItems(usuarios.roles, "ad"));

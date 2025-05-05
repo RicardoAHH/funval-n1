@@ -94,6 +94,21 @@ lista.innerHTML = `
 // </body>
 // </html>
 
-console.log(5 + "5");
-console.log(10 > 5 && 5 > 8);
-console.log(10 == "10");
+// console.log(5 + "5");
+// console.log(10 > 5 && 5 > 8);
+// console.log(10 == "10");
+
+const contenido = document.getElementById('contenido');
+
+        personas.forEach(persona => {
+            let personaHTML = '<div>';
+
+            for (let propiedad in persona) {
+                personaHTML += <p><strong>${propiedad}:</strong> ${persona[propiedad]}</p>;
+            }
+
+            personaHTML += '</div><hr>';
+            contenido.innerHTML += personaHTML;
+        });
+   
+
