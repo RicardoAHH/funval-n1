@@ -154,25 +154,43 @@ filtrar a los mayores de edad
 encontrar a la primera persona mayor de 25 
 calcular la edad total de todos*/
 
-const personas = [
-    { nombre: "Ana", edad: 20 },
-    { nombre: "Luis", edad: 25 },
-    { nombre: "Carlos", edad: 17 },
-    { nombre: "Marta", edad: 30 }
-];
+// const personas = [
+//     { nombre: "Ana", edad: 20 },
+//     { nombre: "Luis", edad: 25 },
+//     { nombre: "Carlos", edad: 17 },
+//     { nombre: "Marta", edad: 30 }
+// ];
 
-let solonombres = personas.map((persona) => {
-    return persona.nombre
-})
-console.log(solonombres);
+// let solonombres = personas.map((persona) => {
+//     return persona.nombre
+// })
+// console.log(solonombres);
 
-let mayoresedad = personas.filter((persona) => {
-    return persona.edad >= 18;
-})
-console.log(mayoresedad);
+// let mayoresedad = personas.filter((persona) => persona.edad >= 18)
+// console.log(mayoresedad);
 
-let mayor25 = personas.find((persona) => persona.edad > 25)
-console.log(mayor25)
+// let mayor25 = personas.find((persona) => persona.edad > 25)
+// console.log(mayor25)
 
-let edadtotal = personas.reduce((contador, persona) => contador + persona.edad, 0);
-console.log(edadtotal);
+// let edadtotal = personas.reduce((contador, persona) => contador + persona.edad, 0);
+// console.log(edadtotal);
+
+// localStorage.setItem("notas", "33")
+// localStorage.clear()
+// console.log(localStorage.getItem("nombre"))
+
+// let persona = {
+//     nombre: "kevin",
+// };
+// //agregar valores a localstorage 1 parametrso 1o key 20 valor 
+// localStorage.setItem("persona", JSON.stringify(persona))
+// //traer el valor asociado a la llave que se pasa con parametro 
+// let obj = JSON.parse(localStorage.getItem("persona"));
+// console.log(obj)
+
+// //localStorage.removeItem() para borrar un item 
+
+import { hola, saludo } from "./funciones.js";
+console.log(hola(": Ricardo"));
+
+console.log(saludo(": Ricardo"));

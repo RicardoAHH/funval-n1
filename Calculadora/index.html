@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+    <main class="w-screen h-screen flex items-center justify-center">
+        <div class="w-[400px] h-[520px] border-3 border-gray-500 rounded-3xl flex flex-wrap justify-around">
+            <section class="h-[15%] w-[100%] flex items-center justify-center">
+                <p id="pantalla" class="h-[90%] w-[90%] border-3 mt-2 text-[30px] text-center"></p>
+            </section>
+            <section class="w-[100%] flex flex-col justify-around">
+                <div class="flex justify-around w-[100%] ">
+                    <div id="boton7"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">7</button>
+                    </div>
+                    <div id="boton8"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">8</button>
+                    </div>
+                    <div id="boton9"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">9</button>
+                    </div>
+                    <div id="botonAC"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">AC</button>
+                    </div>
+                </div>
+                <div class="flex justify-around w-[100%] ">
+                    <div id="boton4"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">4</button>
+                    </div>
+                    <div id="boton5"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">5</button>
+                    </div>
+                    <div id="boton6"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">6</button>
+                    </div>
+                    <div id="botonX"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">X</button>
+                    </div>
+                </div>
+                <div class="flex justify-around w-[100%] ">
+                    <div id="boton1"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">1</button>
+                    </div>
+                    <div id="boton2"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">2</button>
+                    </div>
+                    <div id="boton3"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">3</button>
+                    </div>
+                    <div id="botonDiv"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">/</button>
+                    </div>
+                </div>
+                <div class="flex justify-around w-[100%] ">
+                    <div id="botonMin"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">-</button>
+                    </div>
+                    <div id="boton0"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">0</button>
+                    </div>
+                    <div id="botonMas"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">+</button>
+                    </div>
+                    <div id="botonPunto"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">.</button>
+                    </div>
+                </div>
+                <div class="w-[100%] flex items-center pl-1 ">
+                    <div id="botonIgual"
+                        class="w-[90px] h-[80px] border-3 border-gray-500 bg-[#e3e3e3] rounded-2xl flex text-center justify-center">
+                        <button class="text-[30px] h-[100%] w-[100%] rounded-2xl hover:bg-gray-500">=</button>
+                    </div>
+
+                </div>
+
+        </div>
+        </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
