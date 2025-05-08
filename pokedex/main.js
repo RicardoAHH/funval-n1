@@ -50,6 +50,7 @@ btntodos.addEventListener("click", function (evento) {
     traerPokemons(12);
 });
 
+
 let btnfuego = document.querySelector("#fuego");
 btnfuego.addEventListener("click", function (evento) {
     contenedor.innerHTML = "";
