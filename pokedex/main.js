@@ -42,11 +42,15 @@ function pintarPokemons(pokemon) {
 </div>
 `;
 }
-
 traerPokemons(12);
 
-let btnfuego = document.querySelector("#fuego");
+let btntodos = document.querySelector("#Todos");
+btntodos.addEventListener("click", function (evento) {
+    contenedor.innerHTML = "";
+    traerPokemons(12);
+});
 
+let btnfuego = document.querySelector("#fuego");
 btnfuego.addEventListener("click", function (evento) {
     contenedor.innerHTML = "";
     fetch("https://pokeapi.co/api/v2/type/fire")
@@ -70,7 +74,6 @@ btnagua.addEventListener("click", function (evento) {
         .then((response) => response.json())
         .then((data) => {
             let arraydepokeagua = data.pokemon.slice(0, 12);
-            console.log(arraydepokeagua);
             arraydepokeagua.forEach((poke) => {
                 fetch(poke.pokemon.url)
                     .then((respuesta) => respuesta.json())
@@ -88,7 +91,6 @@ btnplanta.addEventListener("click", function (evento) {
         .then((response) => response.json())
         .then((data) => {
             let arraydepokeplanta = data.pokemon.slice(0, 12);
-            console.log(arraydepokeplanta);
             arraydepokeplanta.forEach((poke) => {
                 fetch(poke.pokemon.url)
                     .then((respuesta) => respuesta.json())
@@ -106,7 +108,6 @@ btnelectrico.addEventListener("click", function (evento) {
         .then((response) => response.json())
         .then((data) => {
             let arraydepokeelectrico = data.pokemon.slice(0, 12);
-            console.log(arraydepokeelectrico);
             arraydepokeelectrico.forEach((poke) => {
                 fetch(poke.pokemon.url)
                     .then((respuesta) => respuesta.json())
@@ -124,7 +125,6 @@ btnfantasma.addEventListener("click", function (evento) {
         .then((response) => response.json())
         .then((data) => {
             let arraydepokefantasma = data.pokemon.slice(0, 12);
-            console.log(arraydepokefantasma);
             arraydepokefantasma.forEach((poke) => {
                 fetch(poke.pokemon.url)
                     .then((respuesta) => respuesta.json())
@@ -134,6 +134,24 @@ btnfantasma.addEventListener("click", function (evento) {
             });
         });
 });
+
+let btnpoison = document.querySelector("#poison");
+btnpoison.addEventListener("click", function (evento) {
+    contenedor.innerHTML = "";
+    fetch("https://pokeapi.co/api/v2/type/poison")
+        .then((response) => response.json())
+        .then((data) => {
+            let arraydepokepoison = data.pokemon.slice(0, 12);
+            arraydepokepoison.forEach((poke) => {
+                fetch(poke.pokemon.url)
+                    .then((respuesta) => respuesta.json())
+                    .then((datopo) => {
+                        pintarPokemons(datopo);
+                    });
+            });
+        });
+});
+
 
 // function tipopokemonfuego(pokemon) {
 //     let poketipo = pokemon.types;
