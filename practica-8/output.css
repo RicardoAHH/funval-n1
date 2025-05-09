@@ -1220,6 +1220,11 @@
       background-color: var(--color-white);
     }
   }
+  .md\:h-\[600px\] {
+    @media (width >= 48rem) {
+      height: 600px;
+    }
+  }
   .md\:h-\[630px\] {
     @media (width >= 48rem) {
       height: 630px;
@@ -1296,6 +1301,11 @@
       display: flex;
     }
   }
+  .lg\:h-\[800px\] {
+    @media (width >= 64rem) {
+      height: 800px;
+    }
+  }
   .lg\:h-\[840px\] {
     @media (width >= 64rem) {
       height: 840px;
@@ -1349,6 +1359,11 @@
   .lg\:w-\[100px\] {
     @media (width >= 64rem) {
       width: 100px;
+    }
+  }
+  .lg\:w-\[560px\] {
+    @media (width >= 64rem) {
+      width: 560px;
     }
   }
   .lg\:w-\[600px\] {
